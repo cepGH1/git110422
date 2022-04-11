@@ -10,26 +10,48 @@
 
 </head>
 <body>
-    method - how to get the data.
+    <header>
+        <h1>Trying out forms</h1>
+    </header>
+    <div>
+    method - how to get the data.<br>
     action - where to send the data.<br>
-    <form method="GET" action="./mytarget.html">
-        <h4>Get form</h4>
-        <input name="query" type="text" />
-        <button type="submit">send</button>
-    </form>
+    </div>
+    <div>
+        <form method="GET" action="./mytarget.html">
+            <h4>Get form</h4>
+                <input name="query" type="text" />
+                <button type="submit">send</button>
+        </form>
+    </div>
     <form method="POST" action="./mailform.php">
 
     </form>
-    <form >
-        <fieldset>
-            <legend>
+
+    <div>
+        <form >
+            <fieldset>
+                <legend>
                 Question 1
-            </legend>
-        <input type="radio" name="choice" value="a">
-        <input type="radio" name="choice" value="b">
-        <input type="radio" name="choice" value="c">
-    </fieldset>
-    </form>
+                </legend>
+                    <p>
+                    <legend >choosing a radio button</legend>
+                    <input type="radio" name="choice" value="a">
+                    <input type="radio" name="choice" value="b">
+                    <input type="radio" name="choice" value="c"></p>
+                        <button type="submit" >Submit</button>
+            </fieldset>
+        </form>
+    </div>
+<div>
+<form>
+    <legend>A colorpicker</legend>
+    <label for="colorName" >Colour : </label>
+    <p><input type="color" id="colorName" name="colorpickerName1" ></p> 
+    <button type="submit" class="btn btn-primary mb-3">Choose colour</button>
+</form>
+</div>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
